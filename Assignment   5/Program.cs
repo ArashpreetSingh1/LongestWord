@@ -8,16 +8,17 @@ namespace Assignment___5
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             Program a = new Program();
             Console.WriteLine("the longest word is : ");
             Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first alogrithm designed for processing by an Analytical Engine."));
         }
-        public MyFunctionA(string input)
+        public bool  MyFunctionA(string input)
         {
             //Write a C# program to find the longest word in a string.
-            string[] words = input.Split('');
+            string[] words = input.Split(' ');
             int wordArrayLength = words.Length;
             int[] wordsLength = new int[wordArrayLength];
             int x = 0;
@@ -30,15 +31,17 @@ namespace Assignment___5
 
             string currentWord = words[0];
             string nextWord;
-            stringlongestWord = currentWord;
+            string longestWord = currentWord;
 
             for (int y = 0;y<words.Length-1;y++)
             {
                 currentWord = words[y];
-                nestWord = words[y + 1];
+                nextWord = words[y + 1];
                 //TODO: Use an IFStatement to make sure that variable longestWord
                 // is always set to the Longest Word in the input string
+                
             }
+            return input;
         }
         }
     }
